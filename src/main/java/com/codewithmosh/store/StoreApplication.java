@@ -7,6 +7,15 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class StoreApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(StoreApplication.class, args);
+       SpringApplication.run(StoreApplication.class, args);
+       //context.getBean("")
+        //var service = cartSer
+       // CartItem cartItem = new CartItem();
+       // cartItem.setQuantity(1);
+       // cartItem.setProduct();
+
+       // Cart cart = new Cart();
+       // cart.addToCart(cartItem);
+
     }
 }
