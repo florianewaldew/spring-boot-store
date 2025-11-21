@@ -3,7 +3,6 @@ package com.codewithmosh.store.payments;
 import com.codewithmosh.store.orders.Order;
 import com.codewithmosh.store.orders.OrderItem;
 import com.codewithmosh.store.orders.PaymentStatus;
-import com.codewithmosh.store.orders.OrderRepository;
 import com.stripe.exception.SignatureVerificationException;
 import com.stripe.exception.StripeException;
 import com.stripe.model.Event;
@@ -21,8 +20,6 @@ import java.util.Optional;
 @Service
 @RequiredArgsConstructor
 public class StripePaymentGateway implements PaymentGateway {
-
-    private final OrderRepository orderRepository;
 
     @Value("${websiteUrl}")
     private String websiteUrl;
